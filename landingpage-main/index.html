@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/one-plus.png" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+
+        <title>OnePlus Store</title>
+          <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="assets/img/one-plus.png" alt="">
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#specs" class="nav__link">Specs</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#case" class="nav__link">Watch</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#products" class="nav__link">Products</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--=============== HOME ===============-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div>
+                        <img src="assets/img/main.png" alt="" class="home__img">
+                    </div>
+
+                    <div class="home__data">
+                        <div class="home__header">
+                            <h1 class="home__title">Never Settle</h1>
+                            <h2 class="home__subtitle">One Plus</h2>
+                        </div>
+
+                        <div class="home__footer">
+                            <h3 class="home__title-description">OnePlus 10T 5G</h3>
+                            <p class="home__description">From first hand access of OnePlus 10T 5G to biggest screening celebration with OnePlus community, there is a lot for the all T lovers out there.
+                            </p>
+                            <a href="https://www.oneplus.in/10-pro" class="button button--flex">
+                                <span class="button--flex">
+                                    <i class="ri-shopping-bag-line button__icon"></i></i> Buy Now
+                                </span>
+                                <span class="home__price">$999</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== SPONSOR ===============-->
+            <section class="sponsor section">
+                <div class="sponsor__container container grid">
+                    <img src="assets/img/sponsor1.png" alt="" class="sponsor__img">
+                    <img src="assets/img/sponsor2.png" alt="" class="sponsor__img">
+                    <img src="assets/img/sponsor3.png" alt="" class="sponsor__img">
+                    <img src="assets/img/sponsor4.png" alt="" class="sponsor__img">
+                </div>
+            </section>
+
+            <!--=============== SPECS ===============-->
+            <section class="specs section grid" id="specs">
+                <h2 class="section__title section__title-gradient">Specs</h2>
+
+                <div class="specs__container container grid">
+                    <div class="specs__content grid">
+                        <div class="specs__data">
+                            <i class="ri-cpu-line specs__icon"></i>
+                            <h3 class="specs__title">Snapdragon</h3>
+                            <span class="specs__subtitle">8 Gen </span>
+                            <span class="specs__subtitle">5G Chipset: X65 </span>
+                        </div>
+
+                        <div class="specs__data">
+                            <i class="ri-battery-charge-line specs__icon"></i>
+                            <h3 class="specs__title">Battery</h3>
+                            <span class="specs__subtitle">5,000 mAh</span>
+                        </div>
+
+                        <div class="specs__data">
+                            <i class="ri-camera-2-line specs__icon"></i>
+                            <h3 class="specs__title">Camera</h3>
+                            <span class="specs__subtitle">Sony IMX789 48MP</span>
+                        </div>
+
+                        <div class="specs__data">
+                        <i class="ri-database-2-line specs__icon"></i>
+                            <h3 class="specs__title">RAM and Storage</h3>
+                            <span class="specs__subtitle">RAM: 8GB/12GB LPDDR5 <br> Storage: 128GB/256GB </span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img src="assets/img/phone.webp" alt="" class="specs__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== CASE ===============-->
+            <section class="case section grid" id="case">
+                <h2 class="section__title section__title-gradient">Watch</h2>
+
+                <div class="case__container container grid">
+                    <div>
+                        <img src="assets/img/watch.png" alt="" class="case__img">
+                    </div>
+
+                    <div class="case__data">
+                        <p class="case__description">Time matters. Your life is busy, we get it. OnePlus Watch combines timeless style with ways to better connect with your lifestyle. Individually hand-polished, each watch embodies uncompromising craftsmanship.
+                        </p>
+                        <a href="https://oneplus-smartwatch.herokuapp.com/" class="button button--flex">
+                            <i class="ri-information-line button__icon"></i> Test watch
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== DISCOUNT ===============-->
+            <section class="discount section">
+                <div class="discount__container container grid">
+                    <div class="discount__animate">
+                        <h2 class="discount__title">Immerse yourself in <br> your music</h2>
+                        <p class="discount__description">OnePlus Buds</p>
+                        <a href="https://www.oneplus.in/product/oneplus-buds" class="button button--flex">
+                            <i class="ri-shopping-bag-line button__icon"></i> Shop Now
+                        </a>
+                    </div>
+
+                    <img src="assets/img/buds.png" alt="" class="discount__img">
+                </div>
+            </section>
+
+            <!--=============== PRODUCTS ===============-->
+            <section class="products section" id="products">
+                <h2 class="section__title section__title-gradient products__line">
+                    Choose <br> Your OnePlus
+                </h2>
+
+                <div class="products__container container grid">
+                    <article class="products__card">
+                        <div class="products__content">
+                            <img src="assets/img/1.webp" alt="" class="products__img">
+
+                            <h3 class="products__title">OnePlus 10T Pro</h3>
+                            <span class="products__price">$999</span>
+
+                            <a href="https://www.oneplus.in/10-pro"><button class="button button--flex products__button">
+                                <i class="ri-shopping-bag-line button__icon"></i>
+                            </button></a>
+                        </div>
+                    </article>
+                    <article class="products__card">
+                        <div class="products__content">
+                            <img src="assets/img/2.png" alt="" class="products__img">
+
+                            <h3 class="products__title">OnePlus 9 Pro</h3>
+                            <span class="products__price">$859</span>
+
+                          <a href="https://www.oneplus.in/9-pro">  <button class="button button--flex products__button">
+                                <i class="ri-shopping-bag-line button__icon"></i>
+                            </button> </a>
+                        </div>
+                    </article>
+                    <article class="products__card">
+                        <div class="products__content">
+                            <img src="assets/img/3.png" alt="" class="products__img">
+
+                            <h3 class="products__title">OnePlus 9</h3>
+                            <span class="products__price">$799</span>
+
+                        <a href="https://www.oneplus.in/9"> <button class="button button--flex products__button">
+                                <i class="ri-shopping-bag-line button__icon"></i>
+                            </button></a>
+                        </div>
+                    </article>
+                    <article class="products__card">
+                        <div class="products__content">
+                            <img src="assets/img/4.webp" alt="" class="products__img">
+
+                            <h3 class="products__title">OnePlus 8 Pro</h3>
+                            <span class="products__price">$699</span>
+
+                          <a href="https://www.oneplus.in/8-pro">  <button class="button button--flex products__button">
+                                <i class="ri-shopping-bag-line button__icon"></i>
+                            </button> </a>
+                        </div>
+                    </article>
+
+                    <article class="products__card">
+                        <div class="products__content">
+                            <img src="assets/img/5.png" alt="" class="products__img">
+
+                            <h3 class="products__title">OnePlus 8</h3>
+                            <span class="products__price">$659</span>
+
+                          <a href="https://www.oneplus.in/8">  <button class="button button--flex products__button">
+                                <i class="ri-shopping-bag-line button__icon"></i>
+                            </button> </a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <a href="#" class="footer__logo">
+                    <!-- <img src="assets/img/logo.png" alt=""> -->
+                </a>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Products</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Headphones</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Earphones</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Earbuds</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Accesories</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Support</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Product help</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Register</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Updates</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Provides</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <form action="" class="footer__form">
+                        <input type="email" placeholder="Email" class="footer__input">
+                        <button class="button button--flex">
+                            <i class="ri-send-plane-line button__icon"></i> Subscribe
+                        </button>
+                    </form>
+
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-twitter-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="footer__copy">
+                <a href="https://www.youtube.com/c/Bedimcode/" target="_blank" class="footer__copy-link">&#169; Aman Sharma. All right reserved.</a>
+            </p>
+        </footer>
+
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-s-line scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+
+
+    </body>
+
+</html>
