@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Playball&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --primary-color: #f4f4fc;
+  --accent-color: #705edc;
+  --text-color: #212129;
+  --secondary-text-color: #212129c1;
+}
+
+::selection {
+  background-color: var(--accent-color);
+}
+
+/* Custom scrollbar CSS */
+::-webkit-scrollbar {
+  /* width: 0.25em; */
+  height: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color);
+  /* border-radius: 100vw; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.accent {
+  color: var(--accent-color);
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  font-family: sans-serif;
+  /* CSS smooth scrolling */
+  overflow: hidden;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  /* background-color: var(--primary-color); */
+}
+
+/* Name on navbar */
+.my-name a {
+  width: 40%;
+  margin: 40px;
+  margin-left: 100px;
+  font-size: 2.5em;
+}
+
+/* Navbar links */
+ul {
+  display: flex;
+  width: 40%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+  font-size: 18px;
+  position: relative;
+}
+
+a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  left: -25%;
+  bottom: -6px;
+  background-color: var(--accent-color);
+  transition: width 0.3s ease;
+}
+
+#navbar .links li a:hover::after {
+  width: 150%;
+}
+
+.links li {
+  list-style: none;
+}
+
+/* Div containing all content */
+#wrapper {
+  /* CSS horizontal scroll */
+  position: relative;
+  width: 100%;
+  display: flex;
+  /* CSS smooth scrolling */
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+#wrapper section {
+  /* height: 100vh; */
+  /* CSS horizontal scroll */
+  height: auto;
+  min-height: calc(100vh - 17px);
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* CSS scroll snap */
+  scroll-snap-align: center;
+}
+
+#wrapper section:nth-child(1) {
+  justify-content: start;
+}
+
+#wrapper section:nth-child(1) .content {
+  height: 20%;
+  margin-top: 250px;
+  text-align: left;
+  margin-left: 150px;
+}
+
+#wrapper section:nth-child(1) .content p {
+  position: relative;
+  left: 45px;
+  top: 15px;
+}
+
+.name {
+  font-size: 4.5em;
+  font-weight: 600;
+  line-height: 100px;
+}
+
+.job-profile {
+  position: relative;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: var(--secondary-text-color);
+  line-height: 40px;
+  left: 45px;
+  top: 15px;
+}
+
+.landing-about-me p {
+  font-size: 1em;
+  font-weight: 300;
+  color: var(--secondary-text-color);
+  word-spacing: 1px;
+}
+
+.profile {
+  width: 300px;
+  border-radius: 50%;
+}
+
+.upper-rect {
+  position: relative;
+  left: -25px;
+  bottom: 40px;
+}
+
+/* Ellipse 1 */
+.circle-one {
+  position: absolute;
+  width: 189px;
+  height: 189px;
+  left: 676px;
+  top: 198px;
+  animation: motion1 4s linear infinite;
+}
+
+/* Ellipse 2 */
+.circle-two {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 210px;
+  top: 423px;
+  animation: motion2 4s linear infinite;
+}
+
+/* Ellipse 3 */
+.circle-three {
+  position: absolute;
+  width: 300px;
+  height: 150px;
+  left: -60px;
+  top: 762px;
+  /* bottom: -300px; */
+  animation: motion1 4s linear infinite;
+}
+
+.circle-four {
+  position: absolute;
+  width: 416px;
+  height: 416px;
+  left: 1500px;
+  top: 313px;
+  animation: motion3 9s linear infinite;
+}
+@keyframes motion1 {
+  50% {
+    transform: translate(-10px, 15px);
+  }
+}
+
+@keyframes motion2 {
+  50% {
+    transform: translate(10px, -10px);
+  }
+}
+
+@keyframes motion3 {
+  50% {
+    transform: scale(1.1);
+  }
+}
